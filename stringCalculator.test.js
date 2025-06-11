@@ -8,4 +8,9 @@ describe('String Calculator', () => {
     test('returns same number', () => {
     expect(add('5000')).toBe(5000);
   });
+
+   test('returns addition of 2 number', () => {
+    expect(add('5000,1000')).toBe(6000);
+  });
+
 })
