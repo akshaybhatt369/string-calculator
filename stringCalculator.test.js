@@ -24,4 +24,7 @@ describe("String Calculator", () => {
       "negative numbers not allowed <-28,-4000>"
     );
   });
+    test('add supports for custom delimiter: "//;\n1;2"', () => {
+    expect(add('//;\n1;2')).toBe(3);
+  });
 });
