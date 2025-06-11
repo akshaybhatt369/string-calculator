@@ -1,0 +1,23 @@
+{
+  "name": "string-calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshaybhatt369/string-calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akshaybhatt369/string-calculator/issues"
+  },
+  "homepage": "https://github.com/akshaybhatt369/string-calculator#readme",
+  "description": "",
+  "dependencies": {
+    "jest": "^30.0.0"
+  }
+}
