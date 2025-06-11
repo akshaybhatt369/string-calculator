@@ -27,4 +27,16 @@ describe("String Calculator", () => {
     test('add supports for custom delimiter: "//;\n1;2"', () => {
     expect(add('//;\n1;2')).toBe(3);
   });
+  
+   test('supports multiple multi-char delimiters: "//[***][%%]\\n1***2%%3"', () => {
+    expect(add('//[***][%%]\n1***2%%3')).toBe(6);
+  });
+
+  test('supports multiple delimiters: "//[*][%]\\n1*2%3"', () => {
+    expect(add('//[*][%]\n1*2%3')).toBe(6);
+  });
+  
+    test('supports custom delimiters with multiple characters: "//[***]\\n1***2***3"', () => {
+    expect(add('//[***]\n1***2***3')).toBe(6);
+  });
 });
